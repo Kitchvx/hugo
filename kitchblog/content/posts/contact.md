@@ -8,13 +8,14 @@ tags = ["Personal", "Contact"]
 keywords = ["Personal", "Contact"]
 description = "List of all the places to reach out to me."
 showFullContent = false
-readingTime = false
+readingTime = true
 hideComments = false
 color = "" #color from the theme settings
 +++
 
 # You can reach me at:
 
+- [Email](mailto:nathk.nk1214@gmail.com)
 - [Twitter](https://twitter.com/Kitchvx/)
 - [Telegram](https://t.me/Kitchvx/)
 - [Instagram](https://instagram.com/1214.kitch/)
