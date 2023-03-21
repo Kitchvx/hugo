@@ -1,0 +1,5 @@
+baseURL = 'https://kitchvx.github.io/'
+languageCode = 'en-us'
+title = "Kitch's Blog"
+theme = 'terminal'
+
