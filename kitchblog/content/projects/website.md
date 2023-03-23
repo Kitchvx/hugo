@@ -50,8 +50,19 @@ sudo pacman -S git
 
 - Windows Installation:
 
-The Windows installation isn't as simple as Linux's installation, who could've guessed? Firstly you will need to aquire the .zip file and make sure [git](https://en.wikipedia.org/wiki/Git) is installed, the download for git can be found [here](https://git-scm.com/download/win). If you have no way of unzipping the .zip file you can head to [winrar's](https://en.wikipedia.org/wiki/WinRAR) [website](https://www.win-rar.com/start.html?&L=0) to install it, free of charge. Now we can head to the [Hugo release](https://github.com/gohugoio/hugo/releases) page on github to install the latest version (at the time of writting it the latest version is v0.111.3). Once these have been aquired we can start. Extract the files from the zip file, I have placed my Hugo install into `C:\Hugo\bin`, and you will then want to open up the [Enviroment Variables](https://www.google.com/search?q=what+is+windows+environment+variables) Editor(?) you can find this by pressing `Win + R` and typing `SystemPropertiesAdvanced` in to the dialogue box you then want to find `Path` under User variables for your user, press edit and add your Hugo binaries to it (this will be the location you have the `Hugo.exe` in). Once this is done we can start using Hugo.
+The Windows installation isn't as simple as Linux's installation, who could've guessed? Firstly you will need to aquire the .zip file and make sure [git](https://en.wikipedia.org/wiki/Git) is installed, the download for git can be found [here](https://git-scm.com/download/win). If you have no way of unzipping the .zip file you can head to [winrar's](https://en.wikipedia.org/wiki/WinRAR) [website](https://www.win-rar.com/start.html?&L=0) to install it, free of charge. Now we can head to the [Hugo release](https://github.com/gohugoio/hugo/releases) page on github to install the latest version (at the time of writting it the latest version is v0.111.3). Once these have been aquired we can start. Extract the files from the zip file, I have placed my Hugo install into `C:\Hugo\bin`, and you will then want to open up the [Enviroment Variables](https://www.google.com/search?q=what+is+windows+environment+variables) Editor(?) you can find this by pressing `Win + R` and typing `SystemPropertiesAdvanced` in to the dialogue box you then want to find `Path` under User variables for your user, press edit
+
+{{< image src="/images/envtable1.png" alt="Screenshot 1" position="center" style="border-radius: 8px;" >}}
+
+and add your Hugo binaries to it (this will be the location you have the `Hugo.exe` in).
+
+{{< image src="/images/envtable2.png" alt="Screenshot 2" position="center" style="border-radius: 8px;" >}}
+
+Once this is done we can start using Hugo.
 
 My current setup for this is using the terminal to setup a new Hugo site and commit any changes made to Github while using [Visual Studio Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) to edit text/code. Alternatively you can use VS Code to commit changes to Github by installing the [Github Pull](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extenstion.
 
 # Using Hugo
+
+
+# Comments
