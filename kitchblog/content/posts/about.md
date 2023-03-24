@@ -9,7 +9,7 @@ keywords = ["About"]
 description = "A short about page telling you a little about myself."
 showFullContent = false
 readingTime = true
-hideComments = false
+hideComments = true
 color = "" #color from the theme settings
 +++
 

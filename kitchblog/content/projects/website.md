@@ -1,5 +1,8 @@
 +++
-title = "Website"
+identifier = "website_proj"
+disqus_title = "cmt_website" # cmt, shortened for "comment".
+disqus_url = "https://kitchvx.github.io/projects/website/"
+title = "Making a Site with Hugo."
 date = "2023-03-21T17:56:28Z"
 author = "Nathan"
 authorTwitter = "Kitchvx" #do not include @
@@ -68,9 +71,12 @@ My current setup for this is using the terminal to setup a new Hugo site and com
 # Comments
 <div id="disqus_thread"></div>
 <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     var disqus_config = function () {
-    this.page.url = /projects/website/;
-    this.page.identifier = Website;
+    this.page.url = disqus_url;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = identifier; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');

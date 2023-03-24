@@ -9,7 +9,7 @@ keywords = ["Personal", "Contact"]
 description = "List of all the places to reach out to me."
 showFullContent = false
 readingTime = true
-hideComments = false
+hideComments = true
 color = "" #color from the theme settings
 +++
 
