@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = "Kitch's Blog"
 theme = 'terminal'
 paginate = 5
-disqusShortname = 'KDisqus'
+disqusShortname = 'kblog-5'
 
 [params]
   # dir name of your main content (default is `content/posts`).
