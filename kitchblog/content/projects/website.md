@@ -18,7 +18,7 @@ color = "" #color from the theme settings
 
 # Overview
 
-In this post, I am going to go through the process on how I got to this point in the website project. As I make this the website isn't 100% complete and this will be update as the site is changed along the way. I created this website as a place to showcase all my projects and proud achivements that will hopefully get the attention of someone that will then use these posts to kickstart their career. Now time to get started!
+In this post, I am going to go through the process on how I got to this point in the website project. As I make this the website isn't 100% complete and this will be updated as the site is changed along the way. I created this website as a place to showcase all my projects and proud achivements that will hopefully get the attention of someone that will then use these posts to kickstart their career. Now time to get started!
 
 # Prerequisites
 
@@ -46,7 +46,7 @@ sudo pacman -S hugo
 
 After Hugo has been installed, make sure you have [git](https://en.wikipedia.org/wiki/Git) as we will be using this too but this should already be installed.
 
-1. Install git.
+3. Install git.
 ```html
 sudo pacman -S git
 ```
