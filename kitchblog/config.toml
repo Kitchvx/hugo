@@ -14,7 +14,7 @@ disqusShortname = 'kblog-5'
   themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 5
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -35,10 +35,10 @@ disqusShortname = 'kblog-5'
   showLastUpdated = true
 
   # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  favicon = "/images/favicon.ico"
 
   # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
-  # updatedDatePrefix = "Updated"
+  updatedDatePrefix = "Updated"
 
   # set all headings to their default size (depending on browser settings)
   # oneHeadingSize = true # default
@@ -60,7 +60,7 @@ disqusShortname = 'kblog-5'
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
   creator = "Kitchvx"
-  site = ""
+  site = "https://kitchvx.github.io"
 
 [languages]
   [languages.en]
