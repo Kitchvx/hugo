@@ -67,15 +67,142 @@ My current setup for this is using the terminal to setup a new Hugo site and com
 
 # Using Hugo
 
-First things first, you will want to create a github repo and name it something relevent like, for example, "kitch-blog". Mine is just called "hugo", add a license if you feel the need to. Now you will want to clone this repository by opening the terminal, change directory (type cd followed by the path to the directory) example `cd .\Documents\`, to the directory you want to save hugo in. Once done you can use git that was previously installed to clone the repository by typing:
+First things first, you will want to create a github repo and name it something relevent like, for example, "kitch-blog". Mine is just called "hugo", add a license if you feel the need to. Then we need to create the submodule repository, you will want to name this your username followed by "github.io", mine for example is "kitchvx.github.io". Now getting the theme is as simple as going to [themes.gohugo.io](https://themes.gohugo.io). The theme I used is called [terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/). before we clone the theme or start using hugo we need to clone the first repository and to do this you use the following command in your terminal:
 
 ```html
 git clone https://github.com/YOUR_NAME/YOUR_REPO.git
 ```
 
-You will also 
-Alternatively you can go on the repo find "<> Code", then select "HTTPS" and copy the link and paste that into the terminal. We also need to setup the submodule, and to do this we need hugo to generate the site, using `hugo new site SITE_NAME`. before we create the submodule 
+Cd inside the repository using `cd` command and use the `hugo new site` command to generate a static website, you have to name it, I went with `hugo new site kitchblog` and it will generate a site inside a new folder within the repository, cd into it and clone the theme:
 
+```html
+git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
+```
+
+Before creating the submodule we need to setup the config and make sure everything is working, for the terminal theme the config should be on the[hugo themes](https://themes.gohugo.io/themes/hugo-theme-terminal/) page but if you don't want to take the small detour, I will embed the code.
+
+{{< code language="toml" title="Terminal Theme Configs" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
+baseurl = "/" # Set this to your website url.
+languageCode = "en-us"
+theme = "terminal"
+paginate = 5
+
+[params]
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor = "orange"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 2
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = false
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+
+  # set a custom favicon (default is a `themeColor` square)
+  # favicon = "favicon.ico"
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # set all headings to their default size (depending on browser settings)
+  # oneHeadingSize = true # default
+
+  # whether to show a page's estimated reading time
+  # readingTime = false # default
+
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  # Toc = false # default
+
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  # TocTitle = "Table of Contents" # default
+
+
+[params.twitter]
+  # set Twitter handles for Twitter cards
+  # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # do not include @
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Terminal"
+    subtitle = "A simple, retro theme for Hugo"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+
+    [languages.en.params.logo]
+      logoText = "Terminal" # Enter your blog name here, mine is "Nathan's Blog".
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
+
+[module]
+  # In case you would like to make changes to the theme and keep it locally in you repository,
+  # uncomment the line below (and correct the local path if necessary).
+  # --
+  # replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
+[[module.imports]]
+  path = 'github.com/panr/hugo-theme-terminal'
+{{< /code >}}
+
+If you are unsure what to do, you can mess around with the configs and check out what everything does. Before seeing the changes you will need to open a terminal and run:
+
+```html
+hugo serve -t terminal
+``` 
+Or you can run it with:
+
+```html
+hugo serve --disableFastRender --ignoreCache -t terminal
+```
+
+The flag `--disbaleFastRender`  enables full re-renders on changes and the flag `--ignoreCache` ignores the cache directory for faster rebuilding times on local previews when saving changes. Now these times aren't significant but when developing on lower end machines it may help.
+
+Without `--disableFastRender` and `--ignoreCache`:
+
+{{< image src="/images/example1-render-times.png" alt="Example 1" position="left" style="border-radius: 8px;" >}}
+
+With `--disableFastRender` and `--ignoreCache`:
+
+{{< image src="/images/example2-render-times.png" alt="Example 2" position="left" style="border-radius: 8px;" >}}
 
 # Comments
 <div id="disqus_thread"></div>
