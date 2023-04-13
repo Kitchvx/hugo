@@ -15,9 +15,9 @@ color = "" #color from the theme settings
 
 # You can reach me at:
 
-- [Email](mailto:nathk.nk1214@gmail.com)
+- [Email](mailto:nathan@kitch.blog)
 - [Twitter](https://twitter.com/Kitchvx/)
 - [Telegram](https://t.me/Kitchvx/)
 - [Instagram](https://instagram.com/kitchh/)
 
-Social Media such as Facebook I am on, however I am inactive. These are the only places you can reach me where I am active, anything else I either no longer use or don't use.
+Social Media such as Facebook I am on, however I am inactive. These are the only places you can reach me where I am active, anything else I either no longer use or don't have.
