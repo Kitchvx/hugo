@@ -32,8 +32,7 @@ disqusShortname = 'kblog-5'
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-  showLastUpdated = true
-  enableGitInfo = true
+  showLastUpdated = false
 
   # set a custom favicon (default is a `themeColor` square)
   favicon = "/images/favicon.ico"
@@ -61,7 +60,7 @@ disqusShortname = 'kblog-5'
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
   # do not include @
   creator = "Kitchvx"
-  site = "https://kitchvx.github.io"
+  site = ""
 
 [languages]
   [languages.en]
