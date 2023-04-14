@@ -8,7 +8,7 @@ disqusShortname = 'kblog-5'
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
-  contentTypeName = "posts"
+  contentTypeName = "projects"
 
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "green"
@@ -68,7 +68,7 @@ disqusShortname = 'kblog-5'
     title = "Nathan's Blog"
     subtitle = "A simple blog about me and my projects!"
     owner = "Nathan"
-    keywords = ""
+    keywords = "Blog"
     copyright = "Copyright © 2023 Nathan Kitching"
     menuMore = "Show more"
     readMore = "Read more"
