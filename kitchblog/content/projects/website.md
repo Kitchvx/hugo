@@ -1,12 +1,12 @@
 +++
 identifier = "website_proj"
-disqus_title = "cmt_website" # cmt, shortened for "comment".
+disqus_title = "Webiste"
 disqus_url = "https://kitchvx.github.io/projects/website/"
 title = "Making a Site with Hugo."
 date = "2023-03-21T17:56:28Z"
 author = "Nathan"
 authorTwitter = "Kitchvx" #do not include @
-cover = "/projects/webproj_cover.png"
+cover = "/images/covers/webproj_cover.png"
 tags = ["Web Development"]
 keywords = ["Website", "Hugo", "Web Development"]
 description = "Going over the entire process on the development of my website, including installing Hugo, using git and using Github Pages."

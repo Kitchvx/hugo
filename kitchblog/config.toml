@@ -1,4 +1,4 @@
-baseURL = 'https://kitchvx.github.io/'
+baseURL = 'https://kitch.blog/'
 languageCode = 'en-us'
 title = "Kitch's Blog"
 theme = 'terminal'
@@ -14,10 +14,10 @@ disqusShortname = 'kblog-5'
   themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 3
+  showMenuItems = 4
 
   # show selector to switch language
-  showLanguageSelector = false
+  showLanguageSelector = true
 
   # set theme to full screen width
   fullWidthTheme = false
@@ -65,6 +65,7 @@ disqusShortname = 'kblog-5'
 [languages]
   [languages.en]
     languageName = "English"
+    languageCode = "en-us"
     title = "Nathan's Blog"
     subtitle = "A simple blog about me and my projects!"
     owner = "Nathan"
@@ -79,6 +80,8 @@ disqusShortname = 'kblog-5'
     missingBackButtonLabel = "Back to home page"
     minuteReadingTime = "min read"
     words = "words"
+    [author]
+      name = "Nathan"
 
     [languages.en.params.logo]
       logoText = "Nathan's Blog"
@@ -93,6 +96,10 @@ disqusShortname = 'kblog-5'
         identifier = "contact"
         name = "Contact"
         url = "/posts/contact/"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
       [[languages.en.menu.main]]
         identifier = "projects"
         name = "Projects"
