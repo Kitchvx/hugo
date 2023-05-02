@@ -14,7 +14,7 @@ disqusShortname = 'kblog-5'
   themeColor = "green"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
+  showMenuItems = 5
 
   # show selector to switch language
   showLanguageSelector = true
@@ -104,6 +104,11 @@ disqusShortname = 'kblog-5'
         identifier = "projects"
         name = "Projects"
         url = "/projects"
+
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "https://showcase.kitch.blog"
 
 [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
