@@ -106,9 +106,9 @@ disqusShortname = 'kblog-5'
         url = "/projects"
 
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "https://showcase.kitch.blog"
+        identifier = "portfolio"
+        name = "Portfolio"
+        url = "https://portfolio.kitch.blog"
 
 [module]
   # In case you would like to make changes to the theme and keep it locally in you repository,
